@@ -11,6 +11,9 @@
 ;; Disable cursor blink.
 (blink-cursor-mode -1)
 
+;; Highlight the current line.
+(global-hl-line-mode +1)
+
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
