@@ -18,4 +18,4 @@
 ;; Set Monaco as default font.
 (set-default-font "Monaco-13")
 
-(provide 'ui)
+(provide 'ui-config)
