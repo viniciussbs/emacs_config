@@ -2,4 +2,5 @@
 (add-to-list 'load-path (concat (file-name-directory load-file-name) "modules/"))
 
 (require 'core-config)
+(require 'osx-config)
 (require 'ui-config)
