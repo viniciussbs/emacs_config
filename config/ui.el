@@ -1,3 +1,7 @@
+;; Load Zenburn color theme.
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'zenburn t)
+
 ;; Disable startup screen.
 (setq inhibit-startup-screen t)
 
@@ -20,10 +24,6 @@
 ;; Highlight matched and mismatched parenthesis.
 (show-paren-mode 1)
 (setq show-paren-delay 0)
-
-;; Load Zenburn color theme.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'zenburn t)
 
 ;; Set Monaco as default font.
 (set-default-font "Monaco-14")
