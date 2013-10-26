@@ -39,3 +39,6 @@
 (setq display-time-day-and-date t
       display-time-24hr-format t)
 (display-time)
+
+;; Enable syntax highlighting for older Emacsen that have it off.
+(global-font-lock-mode t)
