@@ -22,5 +22,3 @@
 ;; Enable IDO.
 (require 'ido)
 (ido-mode t)
-
-(provide 'core-config)
