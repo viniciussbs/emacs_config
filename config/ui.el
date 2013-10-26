@@ -19,6 +19,4 @@
 (load-theme 'zenburn t)
 
 ;; Set Monaco as default font.
-(set-default-font "Monaco-13")
-
-(provide 'ui-config)
+(set-default-font "Monaco-14")
