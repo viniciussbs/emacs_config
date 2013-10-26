@@ -14,7 +14,7 @@
 ;; Highlight the current line.
 (global-hl-line-mode +1)
 
-;; Show line numbers
+;; Show line numbers.
 (global-linum-mode 1)
 
 ;; Highlight matched and mismatched parenthesis.
