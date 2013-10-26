@@ -1,17 +1,8 @@
+(message "Loading configurations...")
 
+(load-file "~/.emacs.d/config/common.el")
+(load-file "~/.emacs.d/config/ui.el")
+(load-file (concat "~/.emacs.d/config/os/" (cond ((eq system-type 'darwin) "osx.el")
+						 ((eq system-type 'gnu/linux) "linux/el"))))
 
-;; Set load-path.
-(setq emacs-config-dir (file-name-directory load-file-name))
-
-(add-to-list 'load-path (concat emacs-config-dir "modules/"))
-(add-to-list 'load-path (concat emacs-config-dir "vendor/"))
-(let ((default-directory (concat emacs-config-dir "vendor/")))
-      (normal-top-level-add-subdirs-to-load-path))
-
-;; Load configuration modules.
-(require 'core-config)
-(require 'osx-config)
-(require 'ui-config)
-
-;; Load external packages.
-(require 'textmate)
+(message "All configurations successfully loaded.")

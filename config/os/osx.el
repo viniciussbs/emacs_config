@@ -1,5 +1,4 @@
-;; On OS X Emacs doesn't use the shell PATH if it's not started from
-;; the shell.
+;; On OS X Emacs doesn't use the shell PATH if it's not started from the shell.
 ;; If you're using homebrew or port, modifying the PATH is essential.
 (let (osx-paths)
   (dolist (path '("/usr/local/bin" "/opt/local/bin" "/opt/local/sbin" "$HOME/bin")
@@ -12,4 +11,3 @@
 (setq mac-command-modifier 'super)
 (setq mac-option-modifier 'meta)
 
-(provide 'osx-config)
