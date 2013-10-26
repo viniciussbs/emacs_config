@@ -28,3 +28,9 @@
 
 ;; Set Monaco as default font.
 (set-default-font "Monaco-14")
+
+;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
+(require 'uniquify)
+(setq
+  uniquify-buffer-name-style 'post-forward
+  uniquify-separator ":")
