@@ -14,6 +14,9 @@
 ;; Highlight the current line.
 (global-hl-line-mode +1)
 
+;; Show line numbers
+(global-linum-mode 1)
+
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
