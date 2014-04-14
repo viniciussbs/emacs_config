@@ -9,6 +9,13 @@
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 
+;; EDITOR
+;; always replace tabs with spaces
+(setq indent-tabs-mode nil)
+;; set tab width to 4 for all buffers
+(setq-default tab-width 2)
+(setq ruby-indent-level 2)
+
 ;; Delete the selection with a keypress.
 (delete-selection-mode t)
 
