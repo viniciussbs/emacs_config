@@ -12,7 +12,7 @@
 ;; EDITOR
 ;; always replace tabs with spaces
 (setq indent-tabs-mode nil)
-;; set tab width to 4 for all buffers
+;; set tab width to 2 for all buffers
 (setq-default tab-width 2)
 (setq ruby-indent-level 2)
 
