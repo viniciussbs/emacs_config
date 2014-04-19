@@ -1,3 +1,5 @@
+(message "- OS X specific configurations...")
+
 ;; On OS X Emacs doesn't use the shell PATH if it's not started from the shell.
 ;; If you're using homebrew or port, modifying the PATH is essential.
 (let (osx-paths)

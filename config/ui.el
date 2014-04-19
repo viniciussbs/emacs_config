@@ -1,3 +1,5 @@
+(message "- UI configurations...")
+
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'zenburn t)
@@ -21,10 +23,6 @@
 ;; Show line numbers with an empty space after each number.
 (global-linum-mode 1)
 (setq linum-format "%d ")
-
-;; Highlight matched and mismatched parenthesis.
-(show-paren-mode 1)
-(setq show-paren-delay 0)
 
 ;; Set Monaco as default font.
 (set-default-font "Monaco-14")
