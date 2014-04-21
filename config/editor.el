@@ -15,6 +15,7 @@
 (setq indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq ruby-indent-level 2)
+(setq js-indent-level 2)
 
 ;; Delete the selection with a keypress.
 (delete-selection-mode t)
