@@ -6,6 +6,8 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
+;; Prevent "encoding magic comment" on ruby-mode.
+(setq ruby-insert-encoding-magic-comment nil)
 
 ;; Highlight matched and mismatched parenthesis.
 (show-paren-mode 1)
