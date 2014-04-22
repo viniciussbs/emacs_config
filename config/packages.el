@@ -18,13 +18,6 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 
-;; iy-go-to-char
-(require 'iy-go-to-char)
-(global-set-key (kbd "C-c s") 'iy-go-to-char)
-(global-set-key (kbd "C-c r") 'iy-go-to-char-backward)
-(global-set-key (kbd "C-c C-s") 'iy-go-to-or-up-to-continue)
-(global-set-key (kbd "C-c C-r") 'iy-go-to-or-up-to-continue-backward)
-
 ;; SCSS mode
 (require 'scss-mode)
 (setq scss-compile-at-save nil)
