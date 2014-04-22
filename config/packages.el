@@ -17,10 +17,18 @@
 
 ;; multiple-cursors
 (require 'multiple-cursors)
-(global-set-key (kbd "C-c m c") 'mc/edit-lines)
-(global-set-key (kbd "C-c m a") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-c m l l") 'mc/edit-lines)
+(global-set-key (kbd "C-c m l b") 'mc/edit-beginnings-of-lines)
+(global-set-key (kbd "C-c m l e") 'mc/edit-ends-of-lines)
+(global-set-key (kbd "C-c m a a") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-c m a r") 'mc/mark-all-in-region)
+(global-set-key (kbd "C-c m e") 'mc/mark-more-like-this-extended)
+(global-set-key (kbd "C-c m t") 'mc/mark-sgml-tag-pair)
+(global-set-key (kbd "C-c m SPC") 'set-rectangular-region-anchor)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-<") 'mc/skip-to-next-like-this)
+(global-set-key (kbd "C-}") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-{") 'mc/skip-to-previous-like-this)
 
 ;; SCSS mode
 (require 'scss-mode)
