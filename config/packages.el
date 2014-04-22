@@ -4,6 +4,10 @@
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+;; Use Package before Emacs initialization.
+(setq package-enable-at-startup nil)
+(package-initialize)
+
 ;; Emmet mode (aka Zen Coding)
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
