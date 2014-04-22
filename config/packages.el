@@ -11,6 +11,13 @@
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; indent 2 spaces.
 (define-key emmet-mode-keymap (kbd "C-j") nil) ;; C-RET is enough
 
+;; multiple-cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-c m c") 'mc/edit-lines)
+(global-set-key (kbd "C-c m a") 'mc/mark-all-like-this)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+
 ;; iy-go-to-char
 (require 'iy-go-to-char)
 (global-set-key (kbd "C-c s") 'iy-go-to-char)
