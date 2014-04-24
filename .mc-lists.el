@@ -3,9 +3,15 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+				emmet-expand-line
+				indent-for-tab-command
+				sgml-close-tag
+				sgml-maybe-name-self
+				sgml-slash
 				))
 
 (setq mc/cmds-to-run-once
       '(
+				ido-find-file
 				kill-region
 				))
