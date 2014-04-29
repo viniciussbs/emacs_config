@@ -35,5 +35,9 @@
 (setq scss-compile-at-save nil)
 (setq css-indent-offset 2)
 
+;; YAML mode
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
 ;; Lorem Ipsum mode
 (require 'lorem-ipsum)
