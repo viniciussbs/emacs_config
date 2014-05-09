@@ -42,7 +42,8 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 ;; flymake-ruby for on the fly syntax checking
-(require 'flymake-ruby)
+(unless (package-installed-p 'flymake-ruby)
+  (package-install 'flymake-ruby))
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 
 ;; inf-ruby provides a REPL buffer connected to a Ruby subprocess
