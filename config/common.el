@@ -14,3 +14,6 @@
 ;; Enable IDO.
 (require 'ido)
 (ido-mode t)
+
+;; Auto revert file
+(global-auto-revert-mode 1)
