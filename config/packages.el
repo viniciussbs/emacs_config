@@ -41,6 +41,10 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+;; Syntax highlighting for Slim
+(unless (package-installed-p 'slim-mode)
+  (package-install 'slim-mode))
+
 ;; flymake-ruby for on the fly syntax checking
 (unless (package-installed-p 'flymake-ruby)
   (package-install 'flymake-ruby))
@@ -75,3 +79,4 @@
   (package-install 'yasnippet))
 (setq yas-snippet-dirs (directory-files "~/.emacs.d/snippets" t))
 (yas-global-mode 1)
+
