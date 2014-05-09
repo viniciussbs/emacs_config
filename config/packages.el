@@ -49,5 +49,10 @@
 (unless (package-installed-p 'inf-ruby)
   (package-install 'inf-ruby))
 
+;; Projectile is a project interaction library for Emacs
+(unless (package-installed-p 'projectile)
+  (package-install 'projectile))
+(projectile-global-mode)
+
 ;; Lorem Ipsum mode
 (require 'lorem-ipsum)
