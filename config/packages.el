@@ -80,3 +80,9 @@
 (setq yas-snippet-dirs (directory-files "~/.emacs.d/snippets" t))
 (yas-global-mode 1)
 
+;; Markdown mode
+(unless (package-installed-p 'markdown-mode)
+  (package-install 'markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
