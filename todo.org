@@ -1,6 +1,7 @@
 * Missing configurations
-** TODO C-c C-c to (un)comment. 				 :keybinding:
-** TODO C-h to Backspace, like shell.				 :keybinding:
+** TODO Check if packages are already installed before require					:pkg:
+	 (unless (package-installed-p 'some-package)
+           (package-install 'some-package))
 ** TODO Set tab size to 2 spaces.			   :ui:edit:defaults:
 ** TODO Add 'smooth-scrolling.					     :ui:pkg:
    http://www.adamspiers.org/elisp/smooth-scrolling.el
@@ -12,8 +13,6 @@
 ** TODO Auto refresh buffers. 				      :edit:defaults:
    (global-auto-revert-mode 1)
 ** TODO Save backup files in a specific directory.
-** DONE Add 'multiple-cursors.																		 :pkg:edit:
-   https://github.com/magnars/multiple-cursors.el
 ** TODO Add 'smex, an M-x enhancement.					:pkg:
    https://github.com/nonsequitur/smex/
 ** TODO Add Ruby/Rails specific configurations. 	    :edit:ruby:rails:
