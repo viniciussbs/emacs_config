@@ -2,7 +2,9 @@
 
 (require 'package)
 (add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+						 '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives
+						 '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; Use Package before Emacs initialization.
 (setq package-enable-at-startup nil)
@@ -42,6 +44,10 @@
 ;; flymake-ruby for on the fly syntax checking
 (require 'flymake-ruby)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
+
+;; inf-ruby provides a REPL buffer connected to a Ruby subprocess
+(unless (package-installed-p 'inf-ruby)
+  (package-install 'inf-ruby))
 
 ;; Lorem Ipsum mode
 (require 'lorem-ipsum)
