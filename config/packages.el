@@ -69,3 +69,9 @@
 (flx-ido-mode 1)
 ;; disable ido faces to see flx highlights.
 (setq ido-use-faces nil)
+
+;; Yasnippet - A template system for Emacs
+(unless (package-installed-p 'yasnippet)
+  (package-install 'yasnippet))
+(setq yas-snippet-dirs (directory-files "~/.emacs.d/snippets" t))
+(yas-global-mode 1)
