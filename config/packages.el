@@ -54,6 +54,18 @@
 (unless (package-installed-p 'projectile)
   (package-install 'projectile))
 (projectile-global-mode)
+(define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
+(define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
+(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
 
 ;; Lorem Ipsum mode
 (require 'lorem-ipsum)
+
+;; Fuzzy matching for Emacs ... a la Sublime Text.
+(unless (package-installed-p 'flx-ido)
+  (package-install 'flx-ido))
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; disable ido faces to see flx highlights.
+(setq ido-use-faces nil)
