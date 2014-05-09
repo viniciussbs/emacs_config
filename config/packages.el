@@ -39,5 +39,9 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
+;; flymake-ruby for on the fly syntax checking
+(require 'flymake-ruby)
+(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+
 ;; Lorem Ipsum mode
 (require 'lorem-ipsum)
