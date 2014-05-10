@@ -80,3 +80,11 @@
 (setq yas-snippet-dirs (directory-files "~/.emacs.d/snippets" t))
 (yas-global-mode 1)
 
+
+;; drag-stuff - Select one or multiple lines to drag down and up
+(unless (package-installed-p 'drag-stuff) (package-install 'drag-stuff))
+(drag-stuff-mode t)
+
+
+
+
