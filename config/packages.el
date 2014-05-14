@@ -68,11 +68,8 @@
 ;; Fuzzy matching for Emacs ... a la Sublime Text.
 (unless (package-installed-p 'flx-ido)
   (package-install 'flx-ido))
-(ido-mode 1)
-(ido-everywhere 1)
 (flx-ido-mode 1)
-;; disable ido faces to see flx highlights.
-(setq ido-use-faces nil)
+(setq ido-use-faces nil) ;; disable ido faces to see flx highlights.
 
 ;; Yasnippet - A template system for Emacs
 (unless (package-installed-p 'yasnippet)
