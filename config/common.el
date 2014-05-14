@@ -15,7 +15,7 @@
 (require 'ido)
 (ido-mode t)
 (ido-everywhere t)
-(setq ido-auto-merge-work-directories-length -1)
+(setq ido-auto-merge-delay-time 3)
 
 ;; Auto revert file
 (global-auto-revert-mode 1)
