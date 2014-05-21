@@ -33,6 +33,11 @@
 (global-set-key (kbd "C-{") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-}") 'mc/skip-to-previous-like-this)
 
+;; expand-region - extension to increase selected region by semantic units
+(unless (package-installed-p 'expand-region) (package-install 'expand-region))
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 ;; SCSS mode
 (require 'scss-mode)
 (setq scss-compile-at-save nil)
