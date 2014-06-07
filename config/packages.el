@@ -51,10 +51,10 @@
 (unless (package-installed-p 'slim-mode)
   (package-install 'slim-mode))
 
-;; flymake-ruby for on the fly syntax checking
-(unless (package-installed-p 'flymake-ruby)
-  (package-install 'flymake-ruby))
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
+;;flycheck for on the fly syntax checking
+(unless (package-installed-p 'flycheck)
+  (package-install 'flycheck))
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; inf-ruby provides a REPL buffer connected to a Ruby subprocess
 (unless (package-installed-p 'inf-ruby)
