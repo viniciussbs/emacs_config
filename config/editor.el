@@ -21,3 +21,6 @@
 
 ;; Delete the selection with a keypress.
 (delete-selection-mode t)
+
+;; Keybinding
+(global-set-key (kbd "C-|") 'align-regexp)
