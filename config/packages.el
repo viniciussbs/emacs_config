@@ -101,3 +101,7 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; Lua mode
+(unless (package-installed-p 'lua-mode)
+  (package-install 'lua-mode))
