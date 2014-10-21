@@ -9,8 +9,10 @@
 ;; Use Package before Emacs initialization.
 (setq package-enable-at-startup nil)
 (package-initialize)
+(package-refresh-contents)
 
 ;; Emmet mode (aka Zen Coding)
+(unless (package-installed-p 'emmet-mode) (package-install 'emmet-mode))
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
@@ -19,6 +21,7 @@
 (define-key emmet-mode-keymap (kbd "C-j") nil) ;; C-RET is enough
 
 ;; multiple-cursors
+(unless (package-installed-p 'multiple-cursors) (package-install 'multiple-cursors))
 (require 'multiple-cursors)
 (global-set-key (kbd "C-c m l l") 'mc/edit-lines)
 (global-set-key (kbd "C-c m l b") 'mc/edit-beginnings-of-lines)
@@ -39,11 +42,13 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 ;; SCSS mode
+(unless (package-installed-p 'scss-mode) (package-install 'scss-mode))
 (require 'scss-mode)
 (setq scss-compile-at-save nil)
 (setq css-indent-offset 2)
 
 ;; YAML mode
+(unless (package-installed-p 'yaml-mode) (package-install 'yaml-mode))
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
@@ -70,6 +75,7 @@
 (define-key projectile-mode-map [?\s-g] 'projectile-grep)
 
 ;; Lorem Ipsum mode
+(unless (package-installed-p 'lorem-ipsum) (package-install 'lorem-ipsum))
 (require 'lorem-ipsum)
 
 ;; Fuzzy matching for Emacs ... a la Sublime Text.

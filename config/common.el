@@ -9,7 +9,6 @@
 
 ;; Enable iBuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-(iswitchb-mode)
 
 ;; Enable IDO.
 (require 'ido)
