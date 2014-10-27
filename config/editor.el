@@ -24,3 +24,5 @@
 
 ;; Keybinding
 (global-set-key (kbd "C-|") 'align-regexp)
+(global-set-key "\C-h" 'backward-delete-char-untabify)
+(define-key isearch-mode-map "\C-h" 'isearch-delete-char)
