@@ -9,7 +9,6 @@
 ;; Use Package before Emacs initialization.
 (setq package-enable-at-startup nil)
 (package-initialize)
-(package-refresh-contents)
 
 ;; Emmet mode (aka Zen Coding)
 (unless (package-installed-p 'emmet-mode) (package-install 'emmet-mode))
