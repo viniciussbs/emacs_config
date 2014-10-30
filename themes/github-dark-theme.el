@@ -43,43 +43,53 @@
   (custom-theme-set-faces
    'github-dark
 
+	 ;; Basic settings
    `(default ((t (:stipple nil :background "#2d2d2d" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal))))
-   `(css-property ((t (:foreground "#d3d3d3"))))
-   `(css-selector ((t (:foreground "#d9c4b2" bold: t))))
    `(cursor ((t (:background "#ffffff"))))
-   `(erb-comment-delim-face ((t (:italic t :bold t :slant italic :foreground "#898989" :weight bold))))
-   `(erb-comment-face ((t (:bold t :background "#eeeeee" :foreground "#898989" :weight bold))))
-   `(erb-delim-face ((t (:bold t :weight bold))))
-   `(erb-exec-delim-face ((t (:bold t :weight bold))))
-   `(erb-exec-face ((t (:background "#eeeeee"))))
-   `(erb-face ((t (:background "#eeeeee"))))
-   `(erb-out-delim-face ((t (:bold t :foreground "#445588" :weight bold))))
-   `(erb-out-face ((t (:background "#eeeeee"))))
-   `(font-lock-builtin-face ((t (nil))))
-   `(font-lock-comment-delimiter-face ((t (:italic t :slant italic :foreground "#898989"))))
-   `(font-lock-comment-face ((t (:italic t :foreground "#898989" :slant italic))))
-   `(font-lock-constant-face ((t (:foreground "#d3d3d3"))))
-   `(font-lock-doc-face ((t (:foreground "#d9c4b2"))))
-   `(font-lock-function-name-face ((t (:foreground "#d9c4b2"))))
-   `(font-lock-keyword-face ((t (:foreground "#d9c4b2" :bold t :weight bold))))
-   `(font-lock-negation-char-face ((t (nil))))
-   `(font-lock-reference-face ((t (nil))))
-   `(font-lock-regexp-grouping-backslash ((t (:foreground "#009926"))))
-   `(font-lock-regexp-grouping-construct ((t (:foreground "#009926"))))
-   `(font-lock-string-face ((t (:foreground "#b96a64"))))
-   `(font-lock-type-face ((t (:foreground "#d3d3d3"))))
-   `(font-lock-variable-name-face ((t (:foreground "#d3d3d3"))))
    `(highlight ((t (:background "#232323"))))
-   `(link ((t (:foreground "blue1" :underline t))))
-   `(link-visited ((t (:underline t :foreground "magenta4"))))
-   `(minibuffer-prompt ((t (:foreground "#d9c4b2"))))
-   `(mode-line ((t (:background "#d3d3d3" :foreground "#2d2d2d"))))
-   `(mode-line-inactive ((t (:background "#333333" :foreground "#898989" :box '(:line-width 1 :color "#898989" :style nil)))))
-   `(mouse ((t (:background "#bcd5fa"))))
    `(region ((t (:background "#424242"))))
+   `(minibuffer-prompt ((t (:foreground "#d9c4b2"))))
+   `(mouse ((t (:background "#bcd5fa"))))
+
+	 ;; Mode line
+	 `(mode-line ((t (:background "#d3d3d3" :foreground "#2d2d2d"))))
+	 `(mode-line-inactive ((t (:background "#333333" :foreground "#898989" :box '(:line-width 1 :color "#898989" :style nil)))))
+	 
+	 ;; Generic font settings:
+	 `(font-lock-builtin-face ((t (nil))))
+	 `(font-lock-comment-delimiter-face ((t (:italic t :slant italic :foreground "#898989"))))
+	 `(font-lock-comment-face ((t (:italic t :foreground "#898989" :slant italic))))
+	 `(font-lock-constant-face ((t (:foreground "#d3d3d3"))))
+	 `(font-lock-doc-face ((t (:foreground "#d9c4b2"))))
+	 `(font-lock-function-name-face ((t (:foreground "#d9c4b2"))))
+	 `(font-lock-keyword-face ((t (:foreground "#d9c4b2" :bold t :weight bold))))
+	 `(font-lock-negation-char-face ((t (nil))))
+	 `(font-lock-reference-face ((t (nil))))
+	 `(font-lock-regexp-grouping-backslash ((t (:foreground "#009926"))))
+	 `(font-lock-regexp-grouping-construct ((t (:foreground "#009926"))))
+	 `(font-lock-string-face ((t (:foreground "#b96a64"))))
+	 `(font-lock-type-face ((t (:foreground "#d3d3d3"))))
+	 `(font-lock-variable-name-face ((t (:foreground "#d3d3d3"))))
+
+	 ;; Paren-match
    `(show-paren-match ((t (:background "#424242" :foreground "#ffffff" :bold t :underline t))))
-   `(show-paren-mismatch ((t (:background "#b96a64"))))))
+   `(show-paren-mismatch ((t (:background "#b96a64"))))
+	 
+	 ;; CSS
+	 `(css-property ((t (:foreground "#d3d3d3"))))
+	 `(css-selector ((t (:foreground "#d9c4b2" bold: t))))
+
+	 ;; ERB
+	 `(erb-comment-delim-face ((t (:italic t :bold t :slant italic :foreground "#898989" :weight bold))))
+	 `(erb-comment-face ((t (:bold t :background "#d3d3d3" :foreground "#898989" :weight bold))))
+	 `(erb-delim-face ((t (:bold t :weight bold))))
+	 `(erb-exec-delim-face ((t (:bold t :weight bold))))
+	 `(erb-exec-face ((t (:background "#d3d3d3"))))
+	 `(erb-face ((t (:background "#d3d3d3"))))
+	 `(erb-out-delim-face ((t (:bold t :foreground "#445588" :weight bold))))
+	 `(erb-out-face ((t (:background "#d3d3d3"))))
+	 )
+	)
 
 (provide-theme 'github-dark)
-
-;;; color-theme-github-dark.el ends here
+;;; github-dark-theme.el ends here
