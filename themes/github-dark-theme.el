@@ -7,7 +7,7 @@
 
 ;; This file is not a part of GNU Emacs.
 
-;;; Comentary:
+;;; Commentary:
 
 ;; This theme was created upon Dudley Flanders' github-theme and inspired
 ;; in Bastien Dejean's n0tch2k color theme for iTerm2.
