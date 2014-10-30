@@ -63,8 +63,8 @@
    `(font-lock-comment-delimiter-face ((t (:italic t :slant italic :foreground "#999988"))))
    `(font-lock-comment-face ((t (:italic t :foreground "#999988" :slant italic))))
    `(font-lock-constant-face ((t (:foreground "#ffffff"))))
-   `(font-lock-doc-face ((t (:foreground "#dd1144"))))
-   `(font-lock-function-name-face ((t (:foreground "#990000"))))
+   `(font-lock-doc-face ((t (:foreground "#b96a64"))))
+   `(font-lock-function-name-face ((t (:foreground "#b96a64"))))
    `(font-lock-keyword-face ((t (:bold t :weight bold))))
    `(font-lock-negation-char-face ((t (nil))))
    `(font-lock-reference-face ((t (nil))))
@@ -91,7 +91,7 @@
    `(quack-pltish-defn-face ((t (:bold t :foreground "blue3" :weight bold))))
    `(quack-pltish-keyword-face ((t (:bold t :weight bold))))
    `(quack-pltish-module-defn-face ((t (:bold t :weight bold :foreground "purple3"))))
-   `(quack-pltish-paren-face ((t (:foreground "red3"))))
+   `(quack-pltish-paren-face ((t (:foreground "#b96a64"))))
    `(quack-pltish-selfeval-face ((t (:foreground "green4"))))
    `(quack-smallprint-face ((t (:height 0.8 :family "Courier"))))
    `(quack-threesemi-h1-face ((t (:bold t :weight bold :height 1.4 :family "Helvetica"))))
@@ -101,7 +101,7 @@
    `(quack-threesemi-text-face ((t (:background "#c0ffff" :foreground "cyan4"))))
    `(region ((t (:background "#424242"))))
    `(show-paren-match ((t (:background "#424242" :foreground "#ffffff" :bold t :underline t))))
-   `(show-paren-mismatch ((t (:background "#dd1144"))))))
+   `(show-paren-mismatch ((t (:background "#b96a64"))))))
 
 (provide-theme 'github-dark)
 
