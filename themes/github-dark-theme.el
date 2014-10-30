@@ -1,16 +1,16 @@
 ;;; github-dark-theme.el --- Github color theme for GNU Emacs 24
 
-;; Copyright (C) 2011 Dudley Flanders <dudley@steambone.org>
+;; Copyright (C) 2014 Vinícius Sales <contato@vinicius-sales.com.br>
 
-;; Author: Dudley Flanders
-;; Adapted-By: Yesudeep Mangalapilly
-;; Adapted-By: Joshua Timberman
+;; Author: Vinícius Sales
 ;; Keywords: github color theme
-;; URL: http://github.com/dudleyf/color-theme-github
-;; Version: 0.0.3
-;; Package-Requires: ((color-theme "6.6.1"))
 
 ;; This file is not a part of GNU Emacs.
+
+;;; Comentary:
+
+;; This theme was created upon Dudley Flanders' github-theme and inspired
+;; in Bastien Dejean's n0tch2k color theme for iTerm2.
 
 ;;; License:
 
@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(deftheme github-dark "Port of Github Theme for Emacs 24")
+(deftheme github-dark "Port of Github Theme for Emacs 24 with dark colors")
 
 (let ((*background-color*  "#2d2d2d")
       (*background-mode*  'dark)
