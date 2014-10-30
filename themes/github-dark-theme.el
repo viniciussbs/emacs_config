@@ -37,16 +37,16 @@
       (*background-mode*  'dark)
       (*border-color*  "black")
       (*cursor-color*  "#ffffff")
-      (*foreground-color*  "#dddddd")
-      (*mouse-color*  "#bcd5fa"))
+      (*foreground-color*  "#d3d3d3")
+      (*mouse-color*  "#ffffff"))
   
   (custom-theme-set-faces
    'github-dark
 
-   `(default ((t (:stipple nil :background "#252525" :foreground "#dddddd" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal))))
-   `(css-property ((t (:foreground "#0086b3"))))
-   `(css-selector ((t (:foreground "#990000"))))
-   `(cursor ((t (:background "#a7a7a7"))))
+   `(default ((t (:stipple nil :background "#252525" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal))))
+   `(css-property ((t (:foreground "#d3d3d3"))))
+   `(css-selector ((t (:foreground "#d9c4b2" bold: t))))
+   `(cursor ((t (:background "#ffffff"))))
    `(ecb-default-general-face ((t (:height 0.9))))
    `(ecb-default-highlight-face ((t (:background "#bcd5fa" :foreground "#000000"))))
    `(ecb-directories-general-face ((t (:bold t :weight bold))))
@@ -70,7 +70,7 @@
    `(font-lock-reference-face ((t (nil))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground "#009926"))))
    `(font-lock-regexp-grouping-construct ((t (:foreground "#009926"))))
-   `(font-lock-string-face ((t (:foreground "#dd1144"))))
+   `(font-lock-string-face ((t (:foreground "#788d6d"))))
    `(font-lock-type-face ((t (:foreground "#445588"))))
    `(font-lock-variable-name-face ((t (:foreground "#0086b3"))))
    `(highlight ((t (:background "#353535"))))
