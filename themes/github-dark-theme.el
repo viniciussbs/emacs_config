@@ -73,7 +73,7 @@
    `(font-lock-string-face ((t (:foreground "#788d6d"))))
    `(font-lock-type-face ((t (:foreground "#445588"))))
    `(font-lock-variable-name-face ((t (:foreground "#0086b3"))))
-   `(highlight ((t (:background "#353535"))))
+   `(highlight ((t (:background "#424242"))))
    `(link ((t (:foreground "blue1" :underline t))))
    `(link-visited ((t (:underline t :foreground "magenta4"))))
    `(minibuffer-prompt ((t (:foreground "#ffffff"))))
