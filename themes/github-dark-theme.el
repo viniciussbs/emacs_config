@@ -76,7 +76,7 @@
    `(highlight ((t (:background "#232323"))))
    `(link ((t (:foreground "blue1" :underline t))))
    `(link-visited ((t (:underline t :foreground "magenta4"))))
-   `(minibuffer-prompt ((t (:foreground "#ffffff"))))
+   `(minibuffer-prompt ((t (:foreground "#d9c4b2"))))
    `(mode-line ((t (:background "#d3d3d3" :foreground "#2d2d2d"))))
    `(mode-line-inactive ((t (:background "#333333" :foreground "#898989" :box '(:line-width 1 :color "#898989" :style nil)))))
    `(mouse ((t (:background "#bcd5fa"))))
