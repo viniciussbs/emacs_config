@@ -33,7 +33,7 @@
 
 (deftheme github-dark "Port of Github Theme for Emacs 24")
 
-(let ((*background-color*  "#252525")
+(let ((*background-color*  "#2d2d2d")
       (*background-mode*  'dark)
       (*border-color*  "black")
       (*cursor-color*  "#ffffff")
@@ -43,7 +43,7 @@
   (custom-theme-set-faces
    'github-dark
 
-   `(default ((t (:stipple nil :background "#252525" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal))))
+   `(default ((t (:stipple nil :background "#2d2d2d" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal))))
    `(css-property ((t (:foreground "#d3d3d3"))))
    `(css-selector ((t (:foreground "#d9c4b2" bold: t))))
    `(cursor ((t (:background "#ffffff"))))
@@ -73,7 +73,7 @@
    `(font-lock-string-face ((t (:foreground "#788d6d"))))
    `(font-lock-type-face ((t (:foreground "#445588"))))
    `(font-lock-variable-name-face ((t (:foreground "#0086b3"))))
-   `(highlight ((t (:background "#424242"))))
+   `(highlight ((t (:background "#232323"))))
    `(link ((t (:foreground "blue1" :underline t))))
    `(link-visited ((t (:underline t :foreground "magenta4"))))
    `(minibuffer-prompt ((t (:foreground "#ffffff"))))
@@ -98,8 +98,8 @@
    `(quack-threesemi-h3-face ((t (:bold t :weight bold :family "Helvetica"))))
    `(quack-threesemi-semi-face ((t (:background "#c0ffff" :foreground "#a0ffff"))))
    `(quack-threesemi-text-face ((t (:background "#c0ffff" :foreground "cyan4"))))
-   `(region ((t (:background "#444444"))))
-   `(show-paren-match ((t (:background "#fff6a9"))))
+   `(region ((t (:background "#424242"))))
+   `(show-paren-match ((t (:background "#424242" :foreground "#ffffff" :bold t :underline t))))
    `(show-paren-mismatch ((t (:background "#dd1144"))))))
 
 (provide-theme 'github-dark)
