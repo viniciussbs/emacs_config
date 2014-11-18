@@ -110,3 +110,7 @@
 ;; Lua mode
 (unless (package-installed-p 'lua-mode)
   (package-install 'lua-mode))
+
+;; REST Client
+(unless (package-installed-p 'restclient)
+  (package-install 'restclient))
