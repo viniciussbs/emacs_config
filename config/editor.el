@@ -6,6 +6,7 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
+(setq buffer-file-coding-system 'utf-8)
 ;; Prevent "encoding magic comment" on ruby-mode.
 (setq ruby-insert-encoding-magic-comment nil)
 
