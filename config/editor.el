@@ -1,5 +1,7 @@
 (message "- editor configurations...")
 
+(setq-default line-spacing 5)
+
 ;; Set UTF-8 as default coding system.
 (prefer-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)

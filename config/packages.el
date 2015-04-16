@@ -1,10 +1,8 @@
 (message "- packages configurations...")
 
 (require 'package)
-(add-to-list 'package-archives
-						 '("marmalade" . "http://marmalade-repo.org/packages/"))
-;; (add-to-list 'package-archives
-;; 						 '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 ;; Use Package before Emacs initialization.
 (setq package-enable-at-startup nil)

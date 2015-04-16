@@ -2,7 +2,7 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'bunker t)
+(load-theme 'soft-morning t)
 
 ;; Disable startup screen.
 (setq inhibit-startup-screen t)
@@ -25,7 +25,7 @@
 (setq linum-format "%d ")
 
 ;; Set Monaco as default font.
-;;(set-default-font "Monaco-14")
+(set-default-font "Menlo-14")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
 (require 'uniquify)
