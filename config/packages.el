@@ -109,6 +109,14 @@
 (unless (package-installed-p 'lua-mode)
   (package-install 'lua-mode))
 
+;; Elixir mode
+(unless (package-installed-p 'elixir-mode)
+  (package-install 'elixir-mode))
+
+;; Elixir Tooling Integration Into Emacs
+(unless (package-installed-p 'alchemist)
+  (package-install 'alchemist))
+
 ;; REST Client
 (unless (package-installed-p 'restclient)
   (package-install 'restclient))
