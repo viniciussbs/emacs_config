@@ -2,7 +2,7 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'soft-morning t)
+(load-theme 'wombat t)
 
 ;; Disable startup screen.
 (setq inhibit-startup-screen t)
