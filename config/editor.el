@@ -17,7 +17,7 @@
 (setq show-paren-delay 0)
 
 ;; Use 2 spaces to indent code instead of tabs.
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq ruby-indent-level 2)
 (setq js-indent-level 2)

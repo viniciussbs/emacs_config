@@ -2,7 +2,11 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'wombat t)
+(load-theme 'monokai t)
+
+;; Enable Powerline.
+(require 'powerline)
+(powerline-default-theme)
 
 ;; Disable startup screen.
 (setq inhibit-startup-screen t)
@@ -20,12 +24,15 @@
 ;; Highlight the current line.
 (global-hl-line-mode +1)
 
+;; Show current column number
+(column-number-mode)
+
 ;; Show line numbers with an empty space after each number.
 (global-linum-mode 1)
 (setq linum-format "%d ")
 
 ;; Set Monaco as default font.
-(set-default-font "Menlo-14")
+(set-default-font "Menlo-18")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
 (require 'uniquify)

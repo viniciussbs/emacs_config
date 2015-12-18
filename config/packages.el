@@ -105,6 +105,19 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+;; js2 mode, a better Javascript mode
+(unless (package-installed-p 'js2-mode)
+  (package-install 'js2-mode))
+;;(add-hook 'js-mode-hook 'js2-minor-mode)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+;; js2 refector mode
+(unless (package-installed-p 'js2-refactor)
+  (package-install 'js2-refactor))
+(require 'js2-refactor)
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c j")
+
 ;; Lua mode
 (unless (package-installed-p 'lua-mode)
   (package-install 'lua-mode))
@@ -120,3 +133,8 @@
 ;; REST Client
 (unless (package-installed-p 'restclient)
   (package-install 'restclient))
+
+;; Powerline
+(unless (package-installed-p 'powerline)
+  (package-install 'powerline))
+
