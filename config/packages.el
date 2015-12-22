@@ -84,7 +84,10 @@
 ;; Yasnippet - A template system for Emacs
 (unless (package-installed-p 'yasnippet)
   (package-install 'yasnippet))
-(setq yas-snippet-dirs (directory-files "~/.emacs.d/snippets" t))
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets/mine/"      ;; foo-mode and bar-mode snippet collection
+        "~/.emacs.d/snippets/yasnippet/" ;; the default collection
+        ))
 (yas-global-mode 1)
 
 ;; Markdown mode
