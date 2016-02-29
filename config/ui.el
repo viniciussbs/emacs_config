@@ -32,7 +32,7 @@
 (setq linum-format "%d ")
 
 ;; Set Monaco as default font.
-(set-default-font "Menlo-18")
+(set-default-font "Consolas-18")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
 (require 'uniquify)
