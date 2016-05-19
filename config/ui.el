@@ -2,7 +2,7 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'monokai t)
+(load-theme 'monotropic t)
 
 ;; Enable Powerline.
 (require 'powerline)
@@ -31,8 +31,8 @@
 (global-linum-mode 1)
 (setq linum-format "%d ")
 
-;; Set Monaco as default font.
-(set-default-font "Consolas-18")
+;; Set default font.
+(set-default-font "Monoid-16")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
 (require 'uniquify)
