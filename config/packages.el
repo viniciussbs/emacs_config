@@ -8,6 +8,10 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
+;; Magit - Git client
+(unless (package-installed-p 'magit) (package-install 'magit))
+(global-set-key (kbd "C-c g") 'magit-status)
+
 ;; Emmet mode (aka Zen Coding)
 (unless (package-installed-p 'emmet-mode) (package-install 'emmet-mode))
 (require 'emmet-mode)
