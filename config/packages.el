@@ -66,10 +66,6 @@
 (unless (package-installed-p 'inf-ruby)
   (package-install 'inf-ruby))
 
-;; Grizzl - A fuzzy-search utility for Emacs
-(unless (package-installed-p 'grizzl)
-  (package-install 'grizzl))
-
 ;; Projectile is a project interaction library for Emacs
 (unless (package-installed-p 'projectile)
   (package-install 'projectile))
@@ -78,7 +74,6 @@
 (define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
 (define-key projectile-mode-map [?\s-f] 'projectile-find-file)
 (define-key projectile-mode-map [?\s-g] 'projectile-grep)
-(setq projectile-completion-system 'grizzl)
 
 ;; Lorem Ipsum mode
 (unless (package-installed-p 'lorem-ipsum) (package-install 'lorem-ipsum))
@@ -88,7 +83,7 @@
 (unless (package-installed-p 'flx-ido)
   (package-install 'flx-ido))
 (flx-ido-mode 1)
-(setq ido-use-faces nil) ;; disable ido faces to see flx highlights.
+(setq ido-use-faces 1) ;; disable ido faces to see flx highlights.
 
 ;; Yasnippet - A template system for Emacs
 (unless (package-installed-p 'yasnippet)
