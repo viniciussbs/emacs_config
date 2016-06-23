@@ -32,7 +32,7 @@
 (setq linum-format "%d ")
 
 ;; Set default font.
-(set-default-font "Monoid-16")
+(set-frame-font "Monoid-14")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
 (require 'uniquify)
