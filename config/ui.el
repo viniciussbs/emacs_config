@@ -2,11 +2,14 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'monotropic t)
+(load-theme 'carbon-dark t)
 
-;; Enable Powerline.
-(require 'powerline)
-(powerline-default-theme)
+;; Set default font.
+(set-frame-font "Consolas-17")
+
+;; ;; Enable Powerline.
+;; (require 'powerline)
+;; (powerline-default-theme)
 
 ;; Disable startup screen.
 (setq inhibit-startup-screen t)
@@ -30,9 +33,6 @@
 ;; Show line numbers with an empty space after each number.
 (global-linum-mode 1)
 (setq linum-format "%d ")
-
-;; Set default font.
-(set-frame-font "Monoid-14")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).
 (require 'uniquify)
