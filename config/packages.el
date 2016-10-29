@@ -83,7 +83,6 @@
 (unless (package-installed-p 'flx-ido)
   (package-install 'flx-ido))
 (flx-ido-mode 1)
-(setq ido-use-faces 1) ;; disable ido faces to see flx highlights.
 
 ;; Yasnippet - A template system for Emacs
 (unless (package-installed-p 'yasnippet)
