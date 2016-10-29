@@ -136,8 +136,8 @@
    `(flycheck-fringe-warning ((,class (:foreground ,yellow :inverse-video t :weight bold))))
    `(flycheck-fringe-info ((,class (:foreground ,blue :inverse-video t :weight bold))))
 
-   `(show-paren-match-face ((t (:background ,cyan :foreground ,base3))))
-   `(show-paren-mismatch-face ((t (:background ,red :foreground ,base3))))
+   `(show-paren-match ((t (:background ,cyan :foreground ,base3))))
+   `(show-paren-mismatch ((t (:background ,red :foreground ,base3))))
 
    ;; org
    `(org-hide ((t (:foreground ,base03))))
