@@ -1,5 +1,4 @@
 ;;; solarized-monotone-dark-theme.el --- Theme
-
 ;; Copyright (C) 2016 , Vinícius Sales
 
 ;; Author: Vinícius Sales
@@ -47,13 +46,15 @@
    `(cursor ((,class (:foreground ,base3 :background ,base03))))
    `(fringe ((,class (:foreground ,base01 :background ,base02))))
    `(header-line ((,class (:foreground ,base0 :background ,base2))))
+   `(hl-line ((,class (:background ,base02))))
    `(highlight ((,class (:background ,base02))))
+   `(lazy-highlight ((,class (:background ,base2 :underline t))))
    `(isearch ((,class (:foreground ,green :inverse-video t))))
+   `(isearch-fail ((,class (:foreground ,red :inverse-video t))))
    `(menu ((,class (:foreground ,base0 :background ,base02))))
    `(minibuffer-prompt ((,class (:bold t :foreground ,base0))))
-   `(mode-line ((,class (:foreground ,base1 :background ,base02 :box (:line-width 1 :color ,base1)))))
-   `(mode-line-inactive ((,class (:foreground ,base0  :background ,base02 :box (:line-width 1 :color ,base02)))))
-   `(mode-line-buffer-id ((,class (:foreground ,base1))))
+   `(mode-line ((,class (:foreground ,cyan :background ,base02 :box (:line-width 3 :color ,base02)))))
+   `(mode-line-inactive ((,class (:foreground ,base01 :background ,base02 :strike-through t :box (:line-width 3 :color ,base02)))))
    ;; `(mode-line-highlight ((,class (:foreground ,base0 :box nil :weight bold))))
    ;; `(mode-line-emphasis ((,class (:foreground ,base0))))
    `(region ((,class (:foreground ,base03 :background ,cyan))))
@@ -106,7 +107,7 @@
 
    ;; ido
    `(ido-first-match ((,class (:foreground ,green :weight normal))))
-   `(ido-only-match ((,class (:foreground ,green :weight normal :inverse-video t))))
+   `(ido-only-match ((,class (:foreground ,green :weight normal))))
    `(ido-subdir ((,class (:foreground ,blue))))
    `(ido-incomplete-regexp ((,class (:foreground ,red :weight bold ))))
    `(ido-indicator ((,class (:background ,red :foreground ,base03 :width condensed))))
@@ -169,7 +170,6 @@
    `(org-document-info-keyword ((,class (:foreground ,base0))))
    `(org-sexp-date ((,class (:foreground ,base0))))
 
-   `(hl-line ((,class (:background  ,base02))))
    `(default-italic ((,class (:italic t))))
    `(link ((,class (:foreground ,base0 :underline t))))
 
@@ -227,7 +227,6 @@
    `(magit-log-author ((,class (:foreground ,base1))))
    `(magit-hash ((,class (:foreground ,base1))))
    `(magit-diff-file-header ((,class (:foreground ,base1 :background ,base01))))
-   `(lazy-highlight ((,class (:foreground ,base1 :background ,base01))))
    `(term ((,class (:foreground ,base0 :background ,base03))))
    `(term-color-black ((,class (:foreground ,base0 :background ,base03))))
    `(term-color-blue ((,class (:foreground ,base0 p:background ,blue))))

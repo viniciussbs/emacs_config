@@ -2,7 +2,7 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'solarized-monotone-dark t)
+(load-theme 'solarized-monotone-light t)
 
 ;; Set default font.
 (set-frame-font "Monaco-16")

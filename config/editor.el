@@ -2,6 +2,9 @@
 
 (setq-default line-spacing 5)
 
+;; Don't create lockfiles - they break Broccoli build pipeline
+(setq create-lockfiles nil)
+
 ;; Set UTF-8 as default coding system.
 (prefer-coding-system 'utf-8)
 (set-default-coding-systems 'utf-8)
