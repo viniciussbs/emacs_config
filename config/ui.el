@@ -5,7 +5,7 @@
 (load-theme 'solarized-monotone-light t)
 
 ;; Set default font.
-(set-frame-font "Monaco-16")
+(set-frame-font "Source Code Pro-16")
 
 ;; ;; Enable Powerline.
 ;; (require 'powerline)
