@@ -125,6 +125,10 @@
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c j")
 
+;; Feature mode - Highlight Gherkin/Cucumber/Feature files
+(unless (package-installed-p 'feature-mode)
+  (package-install 'feature-mode))
+
 ;; Lua mode
 (unless (package-installed-p 'lua-mode)
   (package-install 'lua-mode))
