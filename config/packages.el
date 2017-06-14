@@ -23,6 +23,7 @@
 ;; avy - Jump to things
 (unless (package-installed-p 'avy) (package-install 'avy))
 (require 'avy)
+(global-set-key (kbd "C-c C-j") 'avy-resume)
 (global-set-key (kbd "C-c j f f") 'avy-goto-char-timer)
 (global-set-key (kbd "C-c j f l") 'avy-goto-char-in-line)
 (global-set-key (kbd "C-c j j c") 'avy-goto-char)
