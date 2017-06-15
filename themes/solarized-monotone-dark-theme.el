@@ -43,7 +43,7 @@
   (custom-theme-set-faces
    'solarized-monotone-dark
    `(default ((,class (:foreground ,base0 :background ,base03))))
-   `(cursor ((,class (:foreground ,base3 :background ,base03))))
+   `(cursor ((,class (:foreground ,base3 :background ,magenta))))
    `(fringe ((,class (:foreground ,base01 :background ,base02))))
    `(header-line ((,class (:foreground ,base0 :background ,base2))))
    `(hl-line ((,class (:background ,base02))))
