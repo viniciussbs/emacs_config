@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: arrow-func-block
+# key: =>
+# --
+($1) => ${2:{
+  $0
+}}
