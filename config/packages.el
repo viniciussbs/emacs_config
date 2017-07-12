@@ -80,6 +80,14 @@
   (package-install 'flycheck))
 (add-hook 'after-init-hook 'global-flycheck-mode)
 
+;; Flycheck Credo
+(unless (package-installed-p 'flycheck-credo)
+  (package-install 'flycheck-credo))
+(eval-after-load 'flycheck '(flycheck-credo-setup))
+(add-hook 'elixir-mode-hook 'flycheck-mode)
+(setq flycheck-check-syntax-automatically '(mode-enabled save))
+(setq flycheck-elixir-credo-strict t)
+
 ;; inf-ruby provides a REPL buffer connected to a Ruby subprocess
 (unless (package-installed-p 'inf-ruby)
   (package-install 'inf-ruby))

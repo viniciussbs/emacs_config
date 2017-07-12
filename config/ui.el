@@ -2,7 +2,7 @@
 
 ;; Load Zenburn color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'solarized-monotone-light t)
+(load-theme 'personal-northem-light t)
 
 ;; Set default font.
 (set-frame-font "Source Code Pro-16")
