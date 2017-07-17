@@ -138,6 +138,7 @@
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(setq web-mode-enable-auto-indentation nil)
 
 ;; js2 mode, a better Javascript mode
 (unless (package-installed-p 'js2-mode)
