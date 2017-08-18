@@ -23,21 +23,18 @@
 ;; avy - Jump to things
 (unless (package-installed-p 'avy) (package-install 'avy))
 (require 'avy)
-(global-set-key (kbd "C-c C-j") 'avy-resume)
-(global-set-key (kbd "C-c j f f") 'avy-goto-char-timer)
-(global-set-key (kbd "C-c j f l") 'avy-goto-char-in-line)
-(global-set-key (kbd "C-c j j c") 'avy-goto-char)
-(global-set-key (kbd "C-c j j l") 'avy-goto-line)
-(global-set-key (kbd "C-c j j w") 'avy-goto-word-1)
-(global-set-key (kbd "C-c j j s") 'avy-goto-subword-1)
+(global-set-key (kbd "C-c j l") 'avy-goto-line)
+(global-set-key (kbd "C-c j w") 'avy-goto-subword-1)
+(global-set-key (kbd "C-c j s") 'avy-goto-subword-1)
+(global-set-key (kbd "C-c j c") 'avy-goto-char)
+;; Maybe use another prefix instead of "C-c j":
 (global-set-key (kbd "C-c j d l") 'avy-copy-line)
 (global-set-key (kbd "C-c j d r") 'avy-copy-region)
 (global-set-key (kbd "C-c j m l") 'avy-move-line)
 (global-set-key (kbd "C-c j m r") 'avy-move-region)
 (global-set-key (kbd "C-c j k l") 'avy-kill-whole-line)
 (global-set-key (kbd "C-c j k r") 'avy-kill-region)
-(global-set-key (kbd "C-c j c l") 'avy-kill-ring-save-whole-line)
-(global-set-key (kbd "C-c j c r") 'avy-kill-ring-save-region)
+(setq avy-style 'words)
 
 ;; multiple-cursors
 (unless (package-installed-p 'multiple-cursors) (package-install 'multiple-cursors))
@@ -151,7 +148,7 @@
   (package-install 'js2-refactor))
 (require 'js2-refactor)
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
-(js2r-add-keybindings-with-prefix "C-c j")
+(js2r-add-keybindings-with-prefix "C-c C-j")
 
 ;; Feature mode - Highlight Gherkin/Cucumber/Feature files
 (unless (package-installed-p 'feature-mode)
