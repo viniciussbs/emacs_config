@@ -8,7 +8,7 @@
 (load-theme 'nord t)
 
 ;; Set default font.
-(set-frame-font "Source Code Pro-16")
+(set-frame-font "Source Code Pro-24")
 
 ;; ;; Enable Powerline.
 ;; (require 'powerline)
@@ -50,3 +50,6 @@
 
 ;; Enable syntax highlighting for older Emacsen that have it off.
 (global-font-lock-mode t)
+
+;; Hide leading stars on org-mode.
+(setq org-hide-leading-stars t)
