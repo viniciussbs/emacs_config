@@ -23,17 +23,24 @@
 ;; avy - Jump to things
 (unless (package-installed-p 'avy) (package-install 'avy))
 (require 'avy)
+(global-set-key (kbd "s-l") 'avy-goto-line))
+(global-set-key (kbd "s-j") 'avy-goto-subword-1)
+(global-set-key (kbd "s-J") 'avy-goto-char)
+(global-set-key (kbd "s-k") 'avy-kill-region)
+(global-set-key (kbd "s-K") 'avy-kill-whole-line)
+(global-set-key (kbd "s-m") 'avy-move-region)
+(global-set-key (kbd "s-M") 'avy-move-line)
 (global-set-key (kbd "C-c j l") 'avy-goto-line)
 (global-set-key (kbd "C-c j w") 'avy-goto-subword-1)
 (global-set-key (kbd "C-c j s") 'avy-goto-subword-1)
 (global-set-key (kbd "C-c j c") 'avy-goto-char)
+(global-set-key (kbd "C-c k l") 'avy-kill-whole-line)
+(global-set-key (kbd "C-c k r") 'avy-kill-region)
 ;; Maybe use another prefix instead of "C-c j":
 (global-set-key (kbd "C-c j d l") 'avy-copy-line)
 (global-set-key (kbd "C-c j d r") 'avy-copy-region)
-(global-set-key (kbd "C-c j m l") 'avy-move-line)
-(global-set-key (kbd "C-c j m r") 'avy-move-region)
-(global-set-key (kbd "C-c j k l") 'avy-kill-whole-line)
-(global-set-key (kbd "C-c j k r") 'avy-kill-region)
+(global-unset-key (kbd "s-m"))
+
 (setq avy-style 'words)
 
 ;; multiple-cursors

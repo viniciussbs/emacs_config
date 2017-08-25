@@ -8,7 +8,7 @@
 (load-theme 'nord t)
 
 ;; Set default font.
-(set-frame-font "Source Code Pro-24")
+(set-frame-font "Source Code Pro-20")
 
 ;; ;; Enable Powerline.
 ;; (require 'powerline)
