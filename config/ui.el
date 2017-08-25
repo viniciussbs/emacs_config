@@ -34,7 +34,7 @@
 (column-number-mode)
 
 ;; Show line numbers with an empty space after each number.
-(global-linum-mode 1)
+(global-linum-mode 0)
 (setq linum-format " %d")
 
 ;; Use parts of the filename to make buffer names distinguishable (instead of using `<2>`, `<3>` etc).

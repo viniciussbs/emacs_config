@@ -7,6 +7,16 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
+;; Writeroom mode - a distraction-free mode
+(unless (package-installed-p 'writeroom-mode) (package-install 'writeroom-mode))
+(require 'writeroom-mode)
+(with-eval-after-load 'writeroom-mode
+  (define-key writeroom-mode-map (kbd "s-<") #'writeroom-decrease-width)
+  (define-key writeroom-mode-map (kbd "s->") #'writeroom-increase-width)
+  (define-key writeroom-mode-map (kbd "<S-s-return>") #'writeroom-adjust-width))
+(global-set-key (kbd "<s-return>") 'writeroom-mode)
+(setq writeroom-width 120)
+
 ;; Magit - Git client
 (unless (package-installed-p 'magit) (package-install 'magit))
 (global-set-key (kbd "C-c g") 'magit-status)
