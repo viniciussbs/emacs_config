@@ -150,13 +150,12 @@
    ;; org
    `(org-hide ((t (:foreground ,base3))))
    `(org-todo ((t (:foreground ,red :bold t))))
-   `(org-done ((t (:foreground ,greenish :bold t))))
-
+   `(org-done ((t (:foreground ,greenish :bold t :strike-through t))))
    `(org-code ((,class (:foreground ,base1))))
-   `(org-level-1 ((,class (:bold t :foreground ,base1 :height 1.1))))
-   `(org-level-2 ((,class (:bold nil :foreground ,base1))))
-   `(org-level-3 ((,class (:bold t :foreground ,base02))))
-   `(org-level-4 ((,class (:bold nil :foreground ,base02))))
+   `(org-level-1 ((,class (:bold t :foreground ,bluer))))
+   `(org-level-2 ((,class (:bold t :foreground ,blue))))
+   `(org-level-3 ((,class (:bold t :foreground ,cyan))))
+   `(org-level-4 ((,class (:bold t :foreground ,greenish))))
    `(org-date ((,class (:underline t :foreground ,base02) )))
    `(org-footnote  ((,class (:underline t :foreground ,base02))))
    `(org-link ((,class (:underline t :foreground ,base02 ))))
