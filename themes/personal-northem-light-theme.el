@@ -156,6 +156,8 @@
    `(org-level-2 ((,class (:bold t :foreground ,blue))))
    `(org-level-3 ((,class (:bold t :foreground ,cyan))))
    `(org-level-4 ((,class (:bold t :foreground ,greenish))))
+   `(org-level-5 ((,class (:bold t :foreground ,base01))))
+   `(org-level-6 ((,class (:bold t :foreground ,base02))))
    `(org-date ((,class (:underline t :foreground ,base02) )))
    `(org-footnote  ((,class (:underline t :foreground ,base02))))
    `(org-link ((,class (:underline t :foreground ,base02 ))))
