@@ -24,6 +24,9 @@
 (setq-default tab-width 2)
 (setq ruby-indent-level 2)
 (setq js-indent-level 2)
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-enable-auto-indentation nil)
 
 ;; Delete the selection with a keypress.
 (delete-selection-mode t)
