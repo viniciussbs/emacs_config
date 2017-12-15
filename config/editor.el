@@ -19,6 +19,8 @@
 (show-paren-mode 1)
 (setq show-paren-delay 0)
 
+(electric-pair-mode 1)
+
 ;; Use 2 spaces to indent code instead of tabs.
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
