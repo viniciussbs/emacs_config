@@ -18,6 +18,11 @@
 (global-set-key (kbd "<s-return>") 'writeroom-mode)
 (setq writeroom-width 120)
 
+;; Company - Complete Anything
+(unless (package-installed-p 'company) (package-install 'company))
+(add-hook 'after-init-hook 'global-company-mode)
+(global-set-key (kbd "C-c TAB") 'company-complete)
+
 ;; Magit - Git client
 (unless (package-installed-p 'magit) (package-install 'magit))
 (global-set-key (kbd "C-c g") 'magit-status)
@@ -84,10 +89,24 @@
 (unless (package-installed-p 'slim-mode)
   (package-install 'slim-mode))
 
+;; Fix for OS X
+(unless (package-installed-p 'exec-path-from-shell)
+  (package-install 'exec-path-from-shell))
+(add-hook 'after-init-hook 'exec-path-from-shell-initialize)
+
+;; Add node_modules/ to $PATH
+(unless (package-installed-p 'add-node-modules-path)
+  (package-install 'add-node-modules-path))
+(add-hook 'js2-mode-hook #'add-node-modules-path)
+(add-hook 'graphql-mode-hook #'add-node-modules-path)
+
 ;;flycheck for on the fly syntax checking
 (unless (package-installed-p 'flycheck)
   (package-install 'flycheck))
 (add-hook 'after-init-hook 'global-flycheck-mode)
+(with-eval-after-load 'flycheck
+  (flycheck-add-mode 'javascript-eslint 'graphql-mode))
+(setq flycheck-eslint-args '("--ext" ".js" "--ext" ".graphql"))
 
 ;; Flycheck Credo
 (unless (package-installed-p 'flycheck-credo)
@@ -161,6 +180,10 @@
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-j")
 
+;; GraphQL mode
+(unless (package-installed-p 'graphql-mode)
+  (package-install 'graphql-mode))
+
 ;; Feature mode - Highlight Gherkin/Cucumber/Feature files
 (unless (package-installed-p 'feature-mode)
   (package-install 'feature-mode))
@@ -176,6 +199,7 @@
 ;; Elixir Tooling Integration Into Emacs
 (unless (package-installed-p 'alchemist)
   (package-install 'alchemist))
+(require 'alchemist)
 
 ;; REST Client
 (unless (package-installed-p 'restclient)

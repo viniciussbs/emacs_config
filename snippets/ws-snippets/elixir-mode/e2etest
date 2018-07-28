@@ -3,7 +3,7 @@
 # key: e2etest
 # --
 defmodule E2ETest.${1:Namespace}.${2:Test} do
-  use E2ETest.Case
+  use VzonTest.Case
 
   @tag device: :desktop
   test "${3:should do something}", context, do: run_test(context)
