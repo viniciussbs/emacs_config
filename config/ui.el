@@ -3,9 +3,9 @@
 ;; Nord Theme
 (unless (package-installed-p 'nord-theme) (package-install 'nord-theme))
 
-;; Load Zenburn color theme.
+;; Load color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'personal-northem-light t)
+(load-theme 'monotropic t)
 
 ;; Set default font.
 (set-frame-font "Source Code Pro-20")

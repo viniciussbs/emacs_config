@@ -1,11 +1,12 @@
 (message "- packages configurations...")
 
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives (cons "melpa" "https://melpa.org/packages/") t)
 
 ;; Use Package before Emacs initialization.
 (setq package-enable-at-startup nil)
 (package-initialize)
+(package-refresh-contents)
 
 ;; Writeroom mode - a distraction-free mode
 (unless (package-installed-p 'writeroom-mode) (package-install 'writeroom-mode))
