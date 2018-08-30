@@ -5,14 +5,17 @@
 
 ;; Load color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'monotropic t)
+(load-theme 'carbon-light t)
 
 ;; Set default font.
 (set-frame-font "Source Code Pro-20")
 
-;; ;; Enable Powerline.
-;; (require 'powerline)
-;; (powerline-default-theme)
+;; Enable Powerline.
+;; TODO: take a look at https://github.com/dbordak/telephone-line
+(require 'powerline)
+(powerline-default-theme)
+(setq ns-use-srgb-colorspace t)
+(setq powerline-image-apple-rgb t)
 
 ;; Disable startup screen.
 (setq inhibit-startup-screen t)
