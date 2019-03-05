@@ -41,7 +41,7 @@
       (color-black "#22292F")
 
       ;; Genéricos
-      (background "#F8FAFC")
+      (background "#F1F5F8")
       (foreground "#3D4852")
 
       ;; Syntax Highlighting
