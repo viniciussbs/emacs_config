@@ -8,6 +8,10 @@
 (package-initialize)
 (package-refresh-contents)
 
+;; Diminish - This package implements hiding or abbreviation of the mode line displays (lighters) of minor-modes.
+(unless (package-installed-p 'diminish) (package-install 'diminish))
+(require 'diminish)
+
 ;; Writeroom mode - a distraction-free mode
 (unless (package-installed-p 'writeroom-mode) (package-install 'writeroom-mode))
 (require 'writeroom-mode)
