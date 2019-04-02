@@ -5,7 +5,7 @@
 
 ;; Load color theme.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'carbon-dark t)
+(load-theme 'campainha-light t)
 
 ;; Set default font.
 (set-frame-font "Source Code Pro-20")
