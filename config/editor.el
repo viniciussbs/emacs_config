@@ -39,5 +39,9 @@
 (global-set-key (kbd "C-|") 'align-regexp)
 (global-set-key "\C-h" 'backward-delete-char-untabify)
 (define-key isearch-mode-map "\C-h" 'isearch-delete-char)
+
+(global-unset-key (kbd "s-t"))
+(global-set-key (kbd "s-t") 'term)
+
 ;; TODO: Creat hook to active hs-minor-mode and define the key
 ;; (define-key hs-minor-mode-map (kbd "<backtab>") 'hs-toggle-hiding)

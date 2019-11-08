@@ -41,7 +41,10 @@
       (color-black "#22292F")
       (color-blacker "#111518")
 
+      (color-blue "#3490DC")
+      (color-cyan "#4DC0B5")
       (color-green "#38C172")
+      (color-magenta "#9561E2")
       (color-red "#E3342F")
       (color-yellow "#FFED4A")
 
@@ -92,7 +95,7 @@
    `(region ((,class (:background ,color-darker))))
    `(highlight ((,class ( :background ,color-dark))))
    `(hl-line ((,class (:background ,color-darkest))))
-   `(fringe ((,class (:background ,color-darker))))
+   `(fringe ((,class (:background ,background))))
    `(cursor ((,class (:background ,color-darker))))
    `(show-paren-match-face ((,class (:background ,warning))))
    `(isearch ((,class (:bold t :foreground ,color-black :background ,color-dark))))
@@ -212,15 +215,18 @@
    `(magit-section-highlight ((,class (:background ,background :foreground ,foreground))))
 
    `(lazy-highlight ((,class (:foreground ,fg2 :background ,bg3))))
+
+   ;; term
    `(term ((,class (:foreground ,foreground :background ,background))))
-   `(term-color-black ((,class (:foreground ,bg3 :background ,bg3))))
-   `(term-color-blue ((,class (:foreground ,func :background ,func))))
-   `(term-color-red ((,class (:foreground ,keyword :background ,bg3))))
-   `(term-color-green ((,class (:foreground ,type :background ,bg3))))
-   `(term-color-yellow ((,class (:foreground ,var :background ,var))))
-   `(term-color-magenta ((,class (:foreground ,builtin :background ,builtin))))
-   `(term-color-cyan ((,class (:foreground ,str :background ,str))))
-   `(term-color-white ((,class (:foreground ,fg2 :background ,fg2))))
+   `(term-color-black ((,class (:foreground ,color-black))))
+   `(term-color-blue ((,class (:foreground ,color-blue))))
+   `(term-color-red ((,class (:foreground ,color-red))))
+   `(term-color-green ((,class (:foreground ,color-green))))
+   `(term-color-yellow ((,class (:foreground ,color-yellow))))
+   `(term-color-magenta ((,class (:foreground ,color-magenta))))
+   `(term-color-cyan ((,class (:foreground ,color-cyan))))
+   `(term-color-white ((,class (:foreground ,color-white))))
+
    `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))
    `(helm-header ((,class (:foreground ,fg2 :background ,background :underline nil :box nil))))
    `(helm-source-header ((,class (:foreground ,keyword :background ,background :underline nil :weight bold))))

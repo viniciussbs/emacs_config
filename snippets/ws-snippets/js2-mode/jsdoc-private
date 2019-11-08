@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: jsdoc-private
+# key: @priv
+# --
+/**
+ * @private
+ */
+ $0
