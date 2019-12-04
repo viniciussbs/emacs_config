@@ -1,8 +1,4 @@
-auto-save-list/
-eshell/
-elpa/
-url/
-.mc-lists.el
+auto-save-list
+elpa
 projectile-bookmarks.eld
-projectile.cache
-ido.last
+transient
