@@ -36,6 +36,7 @@
          ("C-ç c" . avy-goto-char)
          ("C-ç w" . avy-goto-word-1)
          ("C-ç l" . avy-goto-line)
+         ("C-ç C-l" . avy-goto-line)
          ("C-ç C-k r" . avy-kill-region)
          ("C-ç C-k l" . avy-kill-whole-line)
          ("C-ç C-c l" . avy-copy-line)
