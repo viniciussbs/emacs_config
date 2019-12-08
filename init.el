@@ -37,12 +37,13 @@
          ("C-ç w" . avy-goto-word-1)
          ("C-ç l" . avy-goto-line)
          ("C-ç C-l" . avy-goto-line)
-         ("C-ç C-k r" . avy-kill-region)
-         ("C-ç C-k l" . avy-kill-whole-line)
-         ("C-ç C-c l" . avy-copy-line)
-         ("C-ç C-c r" . avy-copy-region)
-         ("C-ç C-m r" . avy-move-region)
-         ("C-ç C-m l" . avy-move-line)))
+         ("C-ç C-s" . avy-goto-char-in-line)
+         ("C-ç C-k C-r" . avy-kill-region)
+         ("C-ç C-k C-l" . avy-kill-whole-line)
+         ("C-ç C-c C-l" . avy-copy-line)
+         ("C-ç C-c C-r" . avy-copy-region)
+         ("C-ç C-m C-r" . avy-move-region)
+         ("C-ç C-m C-l" . avy-move-line)))
 
 (use-package nord-theme
   :ensure t
@@ -61,6 +62,9 @@
                           (registers . 5)))
   :config
   (dashboard-setup-startup-hook))
+
+(use-package elixir-mode
+  :ensure t)
 
 (use-package expand-region
   :ensure t
@@ -151,7 +155,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package))))
+    (elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
