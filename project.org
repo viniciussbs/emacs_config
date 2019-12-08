@@ -1,13 +1,9 @@
 * Tasks
 ** TODO ESLint
-** TODO Multiple Cursors
-   Com atalhos Hydra
-** TODO Expand Region
-   Com atalhos Hydra
-** TODO A mode to jump arround
 * References
 ** Packages
 *** https://github.com/Wilfred/ag.el
+*** https://github.com/mrkkrp/modalka
 *** https://github.com/Wilfred/helpful
 *** https://github.com/darksmile/cheatsheet
 *** https://github.com/tonini/alchemist.el
