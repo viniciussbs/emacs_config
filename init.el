@@ -18,9 +18,11 @@
 
 ;; TODO: Use `use-package` or group all variables in a single `setq` call
 ;; https://emacs.stackexchange.com/questions/16477/how-to-use-use-package-with-built-in-packages
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq js-indent-level 2)
 (setq backup-inhibited t)
 (setq auto-save-default nil)
-(setq js-indent-level 2)
 (setq create-lockfiles nil)
 
 ;; Bootstrap `use-package'
@@ -66,6 +68,11 @@
 (use-package elixir-mode
   :ensure t)
 
+(use-package emmet-mode
+  :ensure t
+  :hook ((sgml-mode) (css-mode) (web-mode))
+  :config (define-key emmet-mode-keymap (kbd "C-j") nil))
+
 (use-package expand-region
   :ensure t
   :bind (("C-=" . er/expand-region)
@@ -75,6 +82,10 @@
   :ensure t
   :config
   (flx-ido-mode 1))
+
+(use-package google-this
+  :ensure t
+  :config (google-this-mode 1))
 
 (use-package ibuffer
   :ensure t
@@ -126,6 +137,12 @@
   :config
   (projectile-mode +1))
 
+(use-package scss-mode
+  :ensure t
+  :init
+  (setq scss-compile-at-save nil)
+  (setq css-indent-offset 2))
+
 (use-package web-mode
   :ensure t
   :init
@@ -155,7 +172,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package))))
+    (google-this emmet-mode scss-mode elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
