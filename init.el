@@ -25,10 +25,13 @@
 (setq auto-save-default nil)
 (setq create-lockfiles nil)
 
-;; Bootstrap `use-package'
+;; Setup `use-package'
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+
+(use-package all-the-icons
+  :ensure t)
 
 (use-package avy
   :ensure t
@@ -50,18 +53,22 @@
 (use-package nord-theme
   :ensure t
   :config
-  (set-frame-font "Source Code Pro-18")
+;;  (set-frame-font "Source Code Pro-16")
   (load-theme 'nord t))
 
 (use-package dashboard
   :ensure t
   :init
+  (setq dashboard-banner-logo-title nil)
   (setq dashboard-startup-banner 'logo)
-  (setq dashboard-items '((recents  . 5)
-			  (projects . 5)
-                          (bookmarks . 5)
-                          (agenda . 5)
-                          (registers . 5)))
+  (setq dashboard-items '((recents  . 1)
+                          (projects . 20)))
+  (setq dashboard-show-shortcuts nil)
+  (setq dashboard-center-content t)
+  ;; (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-file-icons t)
+  (setq dashboard-set-init-info nil)
+  (setq dashboard-set-footer nil)
   :config
   (dashboard-setup-startup-hook))
 
@@ -120,22 +127,20 @@
 	 ("C-c m a a" . mc/mark-all-like-this)
 	 ("C-c m a r" . mc/mark-all-in-region)))
 
-(use-package phi-replace
-  :bind ("M-%" . phi-replace-query)
-  :after (phi-search))
-
-(use-package phi-search
-  :bind (("C-s" . phi-search)
-	 ("C-r" . phi-search-backward)))
-
 (use-package projectile
   :ensure t
   :init
-  (setq projectile-project-search-path '("~/Projects/"))
+  (setq projectile-project-search-path '("~/code/"))
   :bind-keymap
   ("C-c p" . projectile-command-map)
   :config
   (projectile-mode +1))
+
+(use-package restclient
+  :ensure t)
+
+(use-package ripgrep
+  :ensure t)
 
 (use-package scss-mode
   :ensure t
@@ -151,17 +156,12 @@
   (setq web-mode-code-indent-offset 2)
   (setq web-mode-attr-indent-offset 2)
   (setq web-mode-enable-auto-indentation nil)
-  :mode ("\\.erb\\'" "\\.eex\\'" "\\.hbs\\'" "\\.html?\\'"))
+  :mode ("\\.erb\\'" "\\.eex\\'" "\\.leex\\'" "\\.hbs\\'" "\\.html?\\'"))
 
 (use-package which-key
   :ensure t
   :config
   (which-key-mode))
-
-(use-package zone-rainbow
-  :ensure t
-  :config
-  (zone-when-idle 120))
 
 (toggle-frame-maximized)
 
@@ -172,7 +172,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (google-this emmet-mode scss-mode elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package))))
+    (rainbow-mode modus-vivendi-theme modus-operandi-theme ripgrep google-this emmet-mode scss-mode elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

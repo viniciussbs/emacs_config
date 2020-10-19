@@ -2,14 +2,15 @@
 ** TODO ESLint
 * References
 ** Packages
+*** https://github.com/rougier/elegant-emacs
+*** https://github.com/rougier/emacs-splash
 *** https://github.com/Wilfred/ag.el
-*** https://github.com/mrkkrp/modalka
 *** https://github.com/Wilfred/helpful
-*** https://github.com/darksmile/cheatsheet
-*** https://github.com/tonini/alchemist.el
-*** https://github.com/emacs-lsp/lsp-mode
-*** https://github.com/emacs-lsp/dap-mode
 *** https://github.com/abo-abo/hydra
+*** https://github.com/clemera/helm-ido-like-guide
+*** https://github.com/darksmile/cheatsheet
+*** https://github.com/emacs-lsp/dap-mode
+*** https://github.com/emacs-lsp/lsp-mode
 *** https://github.com/fgallina/region-bindings-mode
     Or https://github.com/Kungsgeten/selected.el
 *** https://github.com/fxbois/web-mode
@@ -19,9 +20,11 @@
 *** https://github.com/magnars/expand-region.el
 *** https://github.com/magnars/multiple-cursors.el
 *** https://github.com/milkypostman/powerline
+*** https://github.com/mrkkrp/modalka
 *** https://github.com/nonsequitur/smex
 *** https://github.com/purcell/ibuffer-projectile
 *** https://github.com/rmuslimov/browse-at-remote
+*** https://github.com/tonini/alchemist.el
 *** https://github.com/zk-phi/phi-search
 ** Config file
 *** https://github.com/viniciussbs/emacs_config
