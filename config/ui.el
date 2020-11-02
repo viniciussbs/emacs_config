@@ -4,11 +4,12 @@
 (unless (package-installed-p 'nord-theme) (package-install 'nord-theme))
 
 ;; Load color theme.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
 (load-theme 'carbon-dark t)
 
 ;; Set default font.
-(set-frame-font "Source Code Pro-20")
+;; TODO: Install the chosen font before Emacs
+;; (set-frame-font "Source Code Pro-20")
 
 ;; Enable Powerline.
 ;; TODO: take a look at https://github.com/dbordak/telephone-line
