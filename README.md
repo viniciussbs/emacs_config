@@ -12,7 +12,7 @@ This is my Emacs configuration. Feel free to use it. There's a TODO list with mi
 
 The easiest way is to clone this repo to your home path and name it `.emacs.d`. This way:
 
-    $ git clone git://github.com/viniciussbs/emacs_config.git ~/.emacs.d
+    $ git clone git@github.com:viniciussbs/emacs_config.git ~/.emacs.d
 
 But you can clone it to another directory and create a symbolic link. Like this:
 
