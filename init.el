@@ -42,7 +42,9 @@
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
 
-  (load-theme 'doom-city-lights t)
+  ;; (load-theme 'doom-city-lights t)
+  ;; (load-theme 'nano-dark t)
+  (load-theme 'doom-solarized-light t)
 
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
@@ -157,6 +159,16 @@
 ;; - DAP for debug
 ;; - some mode to help with language documentation 
 ;; - restclient
+(use-package lsp-mode
+  :ensure t
+  :diminish lsp-mode
+  :commands (lsp lsp-deferred)
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  (add-to-list 'exec-path "~/.local/share/elixir-ls")
+  :config
+  (lsp-enable-which-key-integration t))
+
 (use-package magit
   :ensure t
   :bind ("C-c g" . magit-status))
@@ -175,9 +187,15 @@
 (use-package restclient
   :ensure t)
 
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode))
+
 ;; ---- PROGRAMMING / BACK-END ----
 (use-package elixir-mode
-  :ensure t)
+  :ensure t
+  :hook (elixir-mode . lsp-deferred))
 
 (use-package exunit
   :ensure t
@@ -268,7 +286,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(mix exunit doom-modeline doom-themes embark marginalia orderless magit project magit-todos magit-todo vertico rainbow-mode modus-vivendi-theme modus-operandi-theme ripgrep google-this emmet-mode scss-mode elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package)))
+   '(nano-theme modus-themes monotropic-theme lsp-mode mix exunit doom-modeline doom-themes embark marginalia orderless magit project magit-todos magit-todo vertico rainbow-mode modus-vivendi-theme modus-operandi-theme ripgrep google-this emmet-mode scss-mode elixir-mode ivy avy phi-replace phi-search expand-region region-bindings-mode multiple-cursors dashboard fireplace zone-nyan zone-rainbow misc web-mode js2-mode which-key use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
