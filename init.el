@@ -71,18 +71,17 @@
   :init
   (setq avy-style 'words)
   :bind
-  (("C-ç C-ç" . avy-goto-word-0)
-   ("C-ç c" . avy-goto-char)
-   ("C-ç w" . avy-goto-word-1)
-   ("C-ç l" . avy-goto-line)
-   ("C-ç C-l" . avy-goto-line)
-   ("C-ç C-s" . avy-goto-char-in-line)
-   ("C-ç C-k C-r" . avy-kill-region)
-   ("C-ç C-k C-l" . avy-kill-whole-line)
-   ("C-ç C-c C-l" . avy-copy-line)
-   ("C-ç C-c C-r" . avy-copy-region)
-   ("C-ç C-m C-r" . avy-move-region)
-   ("C-ç C-m C-l" . avy-move-line)))
+  (("C-c C-j" . avy-goto-word-0)
+   ("C-c j w" . avy-goto-word-1)
+   ("C-c j l" . avy-goto-line)
+   ("C-c j c" . avy-goto-char)
+   ("C-c j j" . avy-goto-char-in-line)
+   ("C-c k k r" . avy-kill-region)
+   ("C-c k k l" . avy-kill-whole-line)
+   ("C-c k s l" . avy-copy-line)
+   ("C-c k s r" . avy-copy-region)
+   ("C-c k m r" . avy-move-region)
+   ("C-c k m l" . avy-move-line)))
 
 (use-package embark
   :ensure t
