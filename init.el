@@ -37,14 +37,13 @@
 (use-package doom-themes
   :ensure t
   :config
-  (set-frame-font "Fira Code-12") ;; Other good fonts: "Monoid-11" and "DejaVu Sans Mono-12"
+  (set-frame-font "MesloLGS NF-15") ;; Other good fonts: "Monoid-11" and "DejaVu Sans Mono-12"
   ;; Global settings (defaults)
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
   ;; (load-theme 'doom-horizon t)
   ;; (load-theme 'doom-palenight t)
   (load-theme 'doom-dracula t)
-
 
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
